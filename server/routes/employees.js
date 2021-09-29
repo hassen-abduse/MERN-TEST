@@ -1,5 +1,5 @@
-import express from 'express';
-import Employees from '../models/Employee'
+const express = require('express');
+const Employees = require('../models/Employee')
 
 const emplyeesRouter = express.Router()
 emplyeesRouter.use(express.json())
