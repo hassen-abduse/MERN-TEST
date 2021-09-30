@@ -58,7 +58,7 @@ emplyeesRouter.route('/:employeeId')
 
 	.put((req, res, next) => {
 		Employees.findByIdAndUpdate(req.params.employeeId,
-			{$set: req.body}, {new: true})
+			{ $set: req.body }, { new: true })
 			.then((employee) => {
 				res.statusCode = 200
 				res.setHeader('Content-Type', 'application/json')
